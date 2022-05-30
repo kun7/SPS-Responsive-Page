@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #1A2F4E;
+}
+.intro {
+    background-image: url(../images/prophet.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img {
+    max-width: 100%;
+    
+}
