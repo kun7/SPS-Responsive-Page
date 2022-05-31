@@ -32,6 +32,17 @@ img {
 /* typography */
 h1 {
     font-size: 2.25rem;
+    text-shadow: 2px 2px 8px #a87a7a;
+    text-decoration: underline dotted #D8DADD;
+    ;
+}
+
+h1+p {
+    color:#D8DADD;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
 }
 .top-text {
     font-size: 0.625rem;
