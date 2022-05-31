@@ -9,12 +9,14 @@ body{
 }
 .intro {
     background-image: url(../images/sps.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-color: #516486;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 .5em 2em;
+    padding: 0 1em 2em;
     justify-content: space-between;
 
 }
@@ -30,16 +32,18 @@ img {
     margin-right: auto;
 }
 /* typography */
-h1 {
+h6 {
     font-size: 2.25rem;
     text-shadow: 2px 2px 8px #a87a7a;
     animation-name: main ; 
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    margin-bottom: 4em;
+    margin-top: 0;
     
 }
 
-h1+p {
+h6+p {
     color:#D8DADD;
     font-weight: 900;
     font-size: 1.3125rem;
@@ -49,6 +53,7 @@ h1+p {
 .top-text {
     font-size: 0.625rem;
     margin: 0;
+    margin-bottom: 0;
     padding-top: 2px;
     color: #D8DADD;
     font-weight: 900;
@@ -126,11 +131,11 @@ input:focus {
         /* display: flex; */
         font-size:1.3125rem
     }
-    h1 {
+    h6 {
         font-size: 3.5rem;
     }
 
-    h2, h1+p {
+    h2, h6+p {
         font-size:1.75rem;
     }
     .main-content {
