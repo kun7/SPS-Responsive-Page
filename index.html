@@ -20,13 +20,33 @@
             <p>Register Today</p>
             <p>Being a muslim isn't just a theoretical field but must be living through it. You can do it by signing up to this webinar!</p>
         
-            <form class="mail" action="#" method="post">
-                <input type="name" placeholder="Your Name"><br>
-                <input type="email" placeholder="Email address"><br>
+            <form id="email-collector" class="mail" action="#" method="post">
+                <input name="firstName" type="name" required placeholder="Your Name"><br>
+                <input name="emailAddress" type="email" required placeholder="Email address"><br>
                 <button class="btn btn-primary" type="submit">register</button>
 
                 <p class="fine-print">We'll never share your information without your permission</p>
             </form>
         </div>
+
+        <script>
+            let emailCollectorForm = document.getElementById("email-collector")
+                emailCollectorForm.addEventListener("submit", event => {
+                event.preventDefault()
+                
+                let ourFormData = new FormData(event.target)
+                // do something with event
+                let userFirstName = ourFormData.get("firstName")
+                
+                let updatedHtmlContent = `
+                    <h2>Congratulations, ${userFirstName}</h2>
+                    <p>You're on your way becoming a better muslim!</p>
+        
+                    <p class="fine-print">We'll never share your information without your permission</p>
+                `    
+                let ourMainContent = document.getElementById("main-content")
+                ourMainContent.innerHTML = updatedHtmlContent    
+            })
+        </script>
     </body>
 </html>
