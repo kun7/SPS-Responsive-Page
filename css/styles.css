@@ -137,7 +137,7 @@ input:focus {
     h2, h6+p {
         font-size:1.75rem;
     }
-    .main-content {
+    .intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
